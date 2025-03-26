@@ -1,4 +1,4 @@
-// Displays the student ID dynamically when the page loads
+// Displays the student ID 
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("student-info").textContent = "Student ID: 200590277 | Name: Tumhang Limbu";
 });
