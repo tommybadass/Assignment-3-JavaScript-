@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link to external JavaScript file  -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <h1>Order Your Pizza</h1>
+    
+    <!-- Pizza order form -->
+    <form id="pizza-form">
+        <!-- Customer Name -->
+        <label for="customer-name">Name:</label>
+        <input type="text" id="customer-name" required>
+
+        <!-- Pizza Size Selection -->
+        <label for="size">Pizza Size:</label>
+        <select id="size" required>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+
+        <!-- Sauce Selection -->
+        <label for="sauce">Choose Sauce:</label>
+        <select id="sauce" required>
+            <option value="Tomato Sauce">Tomato Sauce</option>
+            <option value="Garlic Parmesan">Garlic Parmesan</option>
+            <option value="BBQ Sauce">BBQ Sauce</option>
+            <option value="Spicy Marinara">Spicy Marinara</option>
+        </select>
+
+        <!-- Toppings Selection -->
+        <fieldset>
+            <legend>Choose Toppings:</legend>
+            <input type="checkbox" id="cheese" value="Cheese"> <label for="cheese">Cheese</label>
+            <input type="checkbox" id="pepperoni" value="Pepperoni"> <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="mushrooms" value="Mushrooms"> <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" id="olives" value="Olives"> <label for="olives">Olives</label>
+            <input type="checkbox" id="onions" value="Onions"> <label for="onions">Onions</label>
+            <input type="checkbox" id="double-cheese" value="Double Cheese"> <label for="double-cheese">Double Cheese</label>
+            <input type="checkbox" id="vegan-cheese" value="Vegan Cheese"> <label for="vegan-cheese">Vegan Cheese</label>
+        </fieldset>
+
+        <!-- Crust Selection -->
+        <fieldset>
+            <legend>Crust Type:</legend>
+            <input type="radio" name="crust" id="thin" value="Thin"> <label for="thin">Thin</label>
+            <input type="radio" name="crust" id="thick" value="Thick"> <label for="thick">Thick</label>
+            <input type="radio" name="crust" id="gluten-free" value="Gluten-Free"> <label for="gluten-free">Gluten-Free</label>
+            <input type="radio" name="crust" id="keto" value="Keto"> <label for="keto">Keto</label>
+        </fieldset>
+
+        <!-- Drink Selection -->
+        <label for="drink">Choose a Drink:</label>
+        <select id="drink">
+            <option value="None">None</option>
+            <option value="Coke">Coke</option>
+            <option value="Sprite">Sprite</option>
+            <option value="Water">Water</option>
+            <option value="Orange Juice">Orange Juice</option>
+        </select>
+
+        <!-- Spice Level Selection -->
+        <label for="spice">Spice Level:</label>
+        <select id="spice">
+            <option value="Mild">Mild</option>
+            <option value="Medium">Medium</option>
+            <option value="Spicy">Spicy</option>
+            <option value="Extra Hot">Extra Hot</option>
+        </select>
+
+        <!-- Dessert Selection -->
+        <label for="dessert">Choose a Dessert:</label>
+        <select id="dessert">
+            <option value="None">None</option>
+            <option value="Chocolate Lava Cake">Chocolate Lava Cake</option>
+            <option value="Ice Cream">Ice Cream</option>
+            <option value="Brownie">Brownie</option>
+        </select>
+
+        <!-- Special Instructions -->
+        <label for="instructions">Special Instructions:</label>
+        <textarea id="instructions"></textarea>
+
+        <!-- Order Button -->
+        <button type="submit">Order</button>
+    </form>
+
+    <!-- Student ID Display -->
+    <p id="student-info"></p>
+
+    <!-- Order Summary Display -->
+    <div id="order-summary"></div>
+</body>
+</html>
